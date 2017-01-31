@@ -11,7 +11,8 @@ package com.bac.accountservice;
  */
 public class SimpleAccountServiceApplication implements AccountServiceApplication {
 
-    private String name;
+	private static final long serialVersionUID = -8616698692331389329L;
+	private String name;
     private boolean isEnabled;
     private boolean isRegistrationOpen;
     private AccountServiceAuthenticationOutcome authenticationOutcome;
