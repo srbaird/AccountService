@@ -1,2 +1,2 @@
-# bac-account-services
-Account and user authentication projects
+# Account Service
+Definitions for the account authentication app.
