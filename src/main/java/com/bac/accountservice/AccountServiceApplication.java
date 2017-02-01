@@ -1,31 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.bac.accountservice;
 
 import java.io.Serializable;
 
 /**
- *
- * @author user0001
+ * Specifies the attributes required to authenticate an application. Typically
+ * this would be used to query an application status before presenting login
+ * options.
+ * 
+ * @author Simon Baird
  */
 public interface AccountServiceApplication extends Serializable {
 
-    String getName();
+	String getName();
 
-    void setName(String name);
+	void setName(String name);
 
-    boolean isEnabled();
+	boolean isEnabled();
 
-    void setEnabled(boolean isEnabled);
+	void setEnabled(boolean isEnabled);
 
-    boolean isRegistrationOpen();
+	boolean isRegistrationOpen();
 
-    void setRegistrationOpen(boolean isRegistrationOpen);
+	void setRegistrationOpen(boolean isRegistrationOpen);
 
-    AccountServiceAuthenticationOutcome getAuthenticationOutcome();
+	AccountServiceAuthenticationOutcome getAuthenticationOutcome();
 
-    void setAuthenticationOutcome(AccountServiceAuthenticationOutcome authenticationOutcome);
+	void setAuthenticationOutcome(AccountServiceAuthenticationOutcome authenticationOutcome);
 }

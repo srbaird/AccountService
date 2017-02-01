@@ -1,15 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.bac.accountservice;
 
 /**
- *
- * @author user0001
+ * Represents a set of roles that are assigned to a User account in order to
+ * provide access restrictions if required. Interpretation of each assigned role is arbitrary.
+ * 
+ * @author Simon Baird
  */
 public enum AccountServiceRole {
 
-    ADMIN, SUPERUSER, OWNER, GUEST;
+	ADMIN, SUPERUSER, OWNER, GUEST;
 }

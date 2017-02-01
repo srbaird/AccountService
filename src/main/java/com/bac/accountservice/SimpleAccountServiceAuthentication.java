@@ -1,96 +1,92 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.bac.accountservice;
 
-
-
 /**
- *
- * @author user0001
+ * A default implementation of the {@code AccountServiceAuthentication} interface.
+ * interface.
+ * 
+ * @author Simon Baird
  */
 public class SimpleAccountServiceAuthentication implements AccountServiceAuthentication {
-    
-    private static final long serialVersionUID = 1L;
-
-    private String applicationName;
-    private String accountKey;
-    private String accountPassword;
-    private String accountName;
-    private Object accountResource;
-    private AccountServiceRole accountRole;
-    private AccountServiceAuthenticationOutcome authenticationOutcome;
 
 
-    @Override
-    public String getApplicationName() {
-        return applicationName;
-    }
+	private static final long serialVersionUID = 8349385620990771994L;
+	//
+	private String applicationName;
+	private String accountKey;
+	private String accountPassword;
+	private String accountName;
+	private Object accountResource;
+	private AccountServiceRole accountRole;
+	private AccountServiceAuthenticationOutcome authenticationOutcome;
 
-    @Override
-    public void setApplicationName(String applicationName) {
-        this.applicationName = applicationName;
-    }
+	@Override
+	public String getApplicationName() {
+		return applicationName;
+	}
 
-    @Override
-    public String getAccountKey() {
-        return accountKey;
-    }
+	@Override
+	public void setApplicationName(String applicationName) {
+		this.applicationName = applicationName;
+	}
 
-    @Override
-    public void setAccountKey(String accountKey) {
-        this.accountKey = accountKey;
-    }
+	@Override
+	public String getAccountKey() {
+		return accountKey;
+	}
 
-    @Override
-    public String getAccountPassword() {
-        return accountPassword;
-    }
+	@Override
+	public void setAccountKey(String accountKey) {
+		this.accountKey = accountKey;
+	}
 
-    @Override
-    public void setAccountPassword(String accountPassword) {
-        this.accountPassword = accountPassword;
-    }
+	@Override
+	public String getAccountPassword() {
+		return accountPassword;
+	}
 
-    @Override
-    public String getAccountName() {
-        return accountName;
-    }
+	@Override
+	public void setAccountPassword(String accountPassword) {
+		this.accountPassword = accountPassword;
+	}
 
-    @Override
-    public void setAccountName(String accountName) {
-        this.accountName = accountName;
-    }
+	@Override
+	public String getAccountName() {
+		return accountName;
+	}
 
-    @Override
-    public Object getAccountResource() {
-        return accountResource;
-    }
+	@Override
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
+	}
 
-    @Override
-    public void setAccountResource(Object accountResource) {
-        this.accountResource = accountResource;
-    }
+	@Override
+	public Object getAccountResource() {
+		return accountResource;
+	}
 
-    @Override
-    public AccountServiceRole getAccountRole() {
-        return accountRole;
-    }
+	@Override
+	public void setAccountResource(Object accountResource) {
+		this.accountResource = accountResource;
+	}
 
-    @Override
-    public void setAccountRole(AccountServiceRole accountRole) {
-        this.accountRole = accountRole;
-    }
+	@Override
+	public AccountServiceRole getAccountRole() {
+		return accountRole;
+	}
 
-    @Override
-    public AccountServiceAuthenticationOutcome getAuthenticationOutcome() {
-        return authenticationOutcome;
-    }
+	@Override
+	public void setAccountRole(AccountServiceRole accountRole) {
+		this.accountRole = accountRole;
+	}
 
-    @Override
-    public void setAuthenticationOutcome(AccountServiceAuthenticationOutcome authenticationOutcome) {
-        this.authenticationOutcome = authenticationOutcome;
-    }
+	@Override
+	public AccountServiceAuthenticationOutcome getAuthenticationOutcome() {
+		return authenticationOutcome;
+	}
+
+	@Override
+	public void setAuthenticationOutcome(AccountServiceAuthenticationOutcome authenticationOutcome) {
+		this.authenticationOutcome = authenticationOutcome;
+	}
 }
